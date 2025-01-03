@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualBasic.Devices;
+using Project_UML_diagram;
 
 namespace Belka_project_uml_diagram
 {
@@ -70,7 +71,7 @@ namespace Belka_project_uml_diagram
         }
         public void Unselect()
         {
-            
+
             if (_selection == null)
                 return;
 
@@ -80,21 +81,23 @@ namespace Belka_project_uml_diagram
 
                 foreach (Box box in _boxes)
                 {
-                    
+
                     foreach (Line line in l)
                     {
                         if (box.IsInCollision(line.X, line.Y))
-                        {      
-                                line.box2 = box;
+                        {
+                            line.box2 = box;
 
-                                line.box1.LineCount++;
+                            line.box1.LineCount++;
 
-                                _selection.Unselect();
-                                _drawingLine = false;
-                                _selection = null;
-                                return;
+                            _selection.Unselect();
+                            _drawingLine = false;
+                            _selection = null;
+                            FormEditLine form = new FormEditLine(line);
+                            form.ShowDialog();
+                            return;
                         }
-                        
+
                     }
                 }
                 foreach (Line line in l)
@@ -106,7 +109,7 @@ namespace Belka_project_uml_diagram
             }
 
             else
-            _selection.Unselect();
+                _selection.Unselect();
             _drawingLine = false;
             _selection = null;
         }

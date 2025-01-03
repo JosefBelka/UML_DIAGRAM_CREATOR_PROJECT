@@ -73,11 +73,11 @@
             // 
             // buttonPrint
             // 
-            buttonPrint.Location = new Point(195, 16);
+            buttonPrint.Location = new Point(981, 16);
             buttonPrint.Name = "buttonPrint";
-            buttonPrint.Size = new Size(147, 40);
+            buttonPrint.Size = new Size(147, 38);
             buttonPrint.TabIndex = 2;
-            buttonPrint.Text = "Print";
+            buttonPrint.Text = "Save as png";
             buttonPrint.UseVisualStyleBackColor = true;
             buttonPrint.Click += buttonPrint_Click;
             // 
@@ -85,7 +85,7 @@
             // 
             buttonSaveJSON.Location = new Point(1143, 16);
             buttonSaveJSON.Name = "buttonSaveJSON";
-            buttonSaveJSON.Size = new Size(165, 37);
+            buttonSaveJSON.Size = new Size(165, 38);
             buttonSaveJSON.TabIndex = 3;
             buttonSaveJSON.Text = "Save classes as txt";
             buttonSaveJSON.UseVisualStyleBackColor = true;

@@ -120,15 +120,10 @@ namespace Belka_project_uml_diagram
                 else
                 {
                     
-                    g.DrawLine(Pens.Red, PositionX + l.box1.Width + 10, PositionY + l.box1.Height / 2 + (c * 20), l.box2.PositionX - 10, l.box2.PositionY + l.box2.Height / 2);
+                    g.DrawLine(Pens.Red, PositionX + l.box1.Width, PositionY + l.box1.Height / 2 + (c * 20), l.box2.PositionX - 10, l.box2.PositionY + l.box2.Height / 2);
 
-                    g.DrawString(l.Multi1, new Font("Arial", 12), Brushes.Red, PositionX + l.box1.Width, PositionY + l.box1.Height / 2 - 15 + (c*20));
+                    g.DrawString(l.Multi1, new Font("Arial", 9), Brushes.Red, PositionX + l.box1.Width, PositionY + l.box1.Height / 2 - 15 + (c*20));
                     g.DrawString(l.Multi2, new Font("Arial", 9), Brushes.Red, l.box2.PositionX - 10, l.box2.PositionY + l.box2.Height / 2 - 15);
-
-
-                    g.DrawLine(Pens.Red, PositionX + l.box1.Width, PositionY + l.box1.Height / 2 + (c * 20), PositionX + l.box1.Width + 10, PositionY + l.box1.Height / 2 + 5 + (c * 20));
-                    g.DrawLine(Pens.Red, PositionX + l.box1.Width, PositionY + l.box1.Height / 2 + (c * 20), PositionX + l.box1.Width + 10, PositionY + l.box1.Height / 2 - 5 + (c * 20));
-                    g.DrawLine(Pens.Red, PositionX + l.box1.Width + 10, PositionY + l.box1.Height / 2 + 5 + (c * 20), PositionX + l.box1.Width + 10, PositionY + l.box1.Height / 2 - 5 + (c * 20));
 
                     g.DrawLine(Pens.Red, l.box2.PositionX, l.box2.PositionY + l.box2.Height / 2, l.box2.PositionX - 10, l.box2.PositionY + l.box2.Height / 2 + 5);
                     g.DrawLine(Pens.Red, l.box2.PositionX, l.box2.PositionY + l.box2.Height / 2, l.box2.PositionX - 10, l.box2.PositionY + l.box2.Height / 2 - 5);
