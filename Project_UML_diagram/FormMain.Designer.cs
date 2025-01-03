@@ -34,6 +34,7 @@
             timer1 = new System.Windows.Forms.Timer(components);
             saveFileDialog1 = new SaveFileDialog();
             buttonPrint = new Button();
+            buttonSaveJSON = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox).BeginInit();
             SuspendLayout();
             // 
@@ -80,11 +81,22 @@
             buttonPrint.UseVisualStyleBackColor = true;
             buttonPrint.Click += buttonPrint_Click;
             // 
+            // buttonSaveJSON
+            // 
+            buttonSaveJSON.Location = new Point(1143, 16);
+            buttonSaveJSON.Name = "buttonSaveJSON";
+            buttonSaveJSON.Size = new Size(165, 37);
+            buttonSaveJSON.TabIndex = 3;
+            buttonSaveJSON.Text = "Save classes as txt";
+            buttonSaveJSON.UseVisualStyleBackColor = true;
+            buttonSaveJSON.Click += buttonSaveJSON_Click;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1321, 872);
+            Controls.Add(buttonSaveJSON);
             Controls.Add(buttonPrint);
             Controls.Add(buttonAddClass);
             Controls.Add(pictureBox);
@@ -105,5 +117,6 @@
         private System.Windows.Forms.Timer timer1;
         private SaveFileDialog saveFileDialog1;
         private Button buttonPrint;
+        private Button buttonSaveJSON;
     }
 }
